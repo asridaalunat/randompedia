@@ -1,6 +1,10 @@
 body {
     font-family: 'Arial', sans-serif;
+<<<<<<< HEAD
     background: color 0;;
+=======
+    background-color:rgb(240, 219, 225);
+>>>>>>> c215d2d48d035e1cce86ffa5066cfde975127f36
     margin:auto;
     padding: 0;
 }
@@ -19,6 +23,7 @@ nav a {
 nav{
     text-align: center;
 }
+<<<<<<< HEAD
    div img {
       width: 100%;
       height: 150;
@@ -30,3 +35,17 @@ nav{
             object-fit: cover;  
         }
    
+=======
+div{
+    border-image: auto;
+}
+footer {
+    background-color: #cfd8dc;
+    text-align: center;
+    padding: 15px;
+    font-size: 9px;
+    color: #37474f;
+    border-top: 2px solid #90a4ae;
+    border-radius: 10px;
+  }
+>>>>>>> c215d2d48d035e1cce86ffa5066cfde975127f36
