@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: color 0;;
+    margin:auto;
+    padding: 0;
+}
+nav {
+    background-color: #28a745;;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    outline-color: #5028a7;
+    text-decoration: none;
+    margin:15px;
+    font-weight: bold;
+}
+nav{
+    text-align: center;
+}
+   div img {
+      width: 100%;
+      height: 150;
+      display:block
+     ruby-base cover; }
+.full-image {
+            width: 1p;
+            height: 80vh;  
+            object-fit: cover;  
+        }
+   
