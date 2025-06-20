@@ -1,51 +1,166 @@
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-<<<<<<< HEAD
-    background: color 0;;
-=======
-    background-color:rgb(240, 219, 225);
->>>>>>> c215d2d48d035e1cce86ffa5066cfde975127f36
-    margin:auto;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 0;
+    background-image: url('img/Gambar\ Asrida/100vh');
+    background-size: cover; /* Mengisi seluruh layar */
+    background-position: center center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Agar gambar tetap pada posisi saat scroll */
+    height: 100vh; /* Memastikan gambar mengisi seluruh tinggi layar */
+    position: relative; /* Menambahkan posisi relatif pada body */
 }
+
+/* Navigation Bar */
 nav {
-    background-color: #28a745;;
-    padding: 15px;
-    text-align: center;
+    background-color: #f78686;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Menempatkan link navigasi di tengah secara horizontal */
+    align-items: center; /* Menjaga link tetap di tengah secara vertikal */
+    padding: 10px 0; /* Memberikan padding agar link tidak terlalu rapat */
 }
 
 nav a {
-    outline-color: #5028a7;
+    color: white;
+    padding: 14px 20px;
     text-decoration: none;
-    margin:15px;
+    font-size: 1.2em;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Fullscreen Image for Home Section */
+.full-screen-img {
+    width: 100%;
+    height: 100vh; /* Menutupi seluruh tinggi layar */
+    object-fit: cover; /* Memastikan gambar mengisi layar tanpa distorsi */
+    object-position: center; /* Menjaga gambar tetap terpusat */
+}
+
+/* Home Section */
+.intro {
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Pastikan teks di atas gambar */
+    color: white;
+}
+
+.intro h1 {
+    font-size: 3em;
     font-weight: bold;
 }
-nav{
-    text-align: center;
+
+.intro h2 {
+    font-size: 2em;
 }
-<<<<<<< HEAD
-   div img {
-      width: 100%;
-      height: 150;
-      display:block
-     ruby-base cover; }
-.full-image {
-            width: 1p;
-            height: 80vh;  
-            object-fit: cover;  
-        }
-   
-=======
-div{
-    border-image: auto;
+
+.intro p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
 }
-footer {
-    background-color: #cfd8dc;
-    text-align: center;
-    padding: 15px;
-    font-size: 9px;
-    color: #37474f;
-    border-top: 2px solid #90a4ae;
-    border-radius: 10px;
-  }
->>>>>>> c215d2d48d035e1cce86ffa5066cfde975127f36
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center; /* Menjaga konten tetap di tengah secara horizontal */
+    align-items: center; /* Menjaga konten tetap di tengah secara vertikal */
+    margin: 200px;
+    text-align: left; /* Membuat teks rata kiri */
+    flex-wrap: wrap; /* Menjaga agar elemen responsif pada layar kecil */
+}
+
+.about-img {
+    flex: 1; /* Memberikan ruang fleksibel untuk gambar */
+    margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+    max-width: 100%;
+}
+
+.about-img img {
+    width: 100%; /* Membuat gambar responsif */
+    max-width: 5000px; /* Menambah ukuran gambar menjadi lebih besar */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
+
+.about-text {
+    flex: 2; /* Memberikan lebih banyak ruang untuk teks */
+    max-width: 600px; /* Membatasi lebar maksimal teks */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada teks */
+    border-radius: 8px; /* Membuat sudut teks melengkung */
+}
+
+.about-text h2 {
+    color: #333; /* Warna teks untuk judul */
+    font-size: 2em; /* Ukuran font untuk judul */
+}
+
+.about-text p {
+    font-size: 1.2em; /* Ukuran font untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris yang nyaman dibaca */
+    color: #555; /* Warna teks untuk paragraf */
+}
+
+/* Contact Section */
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-img {
+    width: 30px; /* Mengubah ukuran gambar menjadi lebih kecil */
+    height: 30px;
+    margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.contact-header p {
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #357537;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#input[type="submit"]:hover {
+    background-color:0;
+}

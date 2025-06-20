@@ -1,49 +1,55 @@
-<<<<<<< HEAD
- <!DOCTYPE html>
-=======
 <!DOCTYPE html>
->>>>>>> c215d2d48d035e1cce86ffa5066cfde975127f36
-<html>
-    <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title> Kontak Asrida Alunat</title>
-            <link rel="stylesheet" type="text/css" href="asrida.css">
-    </head>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Asrida Alunat</title>
+    <link rel="stylesheet" type="text/css" href="asrida.css">
+</head>
 <body>
-          <nav>
-              <a href="index.html" style="color:black;">Home</a> 
-<<<<<<< HEAD
-              <a href="about asrida.html" style="color:black;">About Me</a> 
-=======
-              <a href="asrida.html" style="color:black;">About Me</a> 
->>>>>>> c215d2d48d035e1cce86ffa5066cfde975127f36
-              <a href="contact asrida.html" style="color:black;">contact Me</a>
-          </nav>
 
-      <h1>Silakan hubungi saya melalui Handphone atau email saya dibawah ini:</h1>
-      <p>Email:asridaalunat@email.com</p>
-      <p>Handphone: 085333082637</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" style="color:black;">Home</a>
+        <a href="about asrida.html" style="color:black;">About Me</a>
+        <a href="contact asrida.html" style="color:black;">Contact Me</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <header style="text-align: center;">
+        <div class="contact-header">
+            <img src="img/Gambar Asrida/email.png" alt="kontact" class="contact-img">
+            <h1><p style="color: rgb(31, 62, 235);">Email: asridaalunat@gmail.com</p></h1>
+        </div>
+
+        <div class="contact-header">
+            <img src="img/Gambar Asrida/contact.webp" alt="Email" class="contact-img">
+            <h1><p>Handphone: 085333082637</p></h1>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="send-message.php" method="POST">
                 <div>
-                    <h1>Contact Me</h1>
-                    <form>
-                       <div>
-                         <label for="Handphone">Handphone</label>
-                               <br>
-                                <input type="Handphone" name="Handphone" placeholder="alamat Handphone"/>
-                              <br>
-                       </div>
-                        <label for="email">Email</label>
-                            <br>
-                              <input type="email" name="email" placeholder="alamat email"/>
-                                  <br>
-                                    <label for="message">Pesan</label>
-                                  <br />
-                                <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
-                              <br />
-                            <input type="submit" value="Kirim" />
-                    </form>
+                    <h3><label for="Handphone">Handphone</label></h3>
+                    <input type="text" name="Handphone" placeholder="Nomor Handphone" required />
                 </div>
+                <div>
+                    <h3><label for="email">Email</label></h3>
+                    <input type="email" name="email" placeholder="Email Anda" required />
+                </div>
+                <div>
+                    <h3><label for="message">Pesan</label></h3>
+                    <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="50" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Kirim Pesan" />
+                </div>
+            </form>
+        </div>
+    </header>
 
 </body>
 </html>
+
+
