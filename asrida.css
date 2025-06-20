@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 /* --- GLOBAL STYLES --- */
+=======
+/* Global Styles */
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     background-image: url('img/Gambar Asrida/Free Fire.jpeg');
     background-size: cover;
     background-position: center;
@@ -21,6 +26,24 @@ nav {
     align-items: center;
     padding: 10px 0;
     flex-wrap: wrap;
+=======
+    background-image: url('img/Gambar\ Asrida/100vh');
+    background-size: cover; /* Mengisi seluruh layar */
+    background-position: center center; /* Menjaga gambar tetap terpusat */
+    background-attachment: fixed; /* Agar gambar tetap pada posisi saat scroll */
+    height: 100vh; /* Memastikan gambar mengisi seluruh tinggi layar */
+    position: relative; /* Menambahkan posisi relatif pada body */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f78686;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Menempatkan link navigasi di tengah secara horizontal */
+    align-items: center; /* Menjaga link tetap di tengah secara vertikal */
+    padding: 10px 0; /* Memberikan padding agar link tidak terlalu rapat */
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
 }
 
 nav a {
@@ -36,6 +59,7 @@ nav a:hover {
     color: black;
 }
 
+<<<<<<< HEAD
 /* --- FULLSCREEN IMAGE --- */
 .full-screen-img {
     width: 100%;
@@ -45,6 +69,17 @@ nav a:hover {
 }
 
 /* --- INTRO / HOME SECTION --- */
+=======
+/* Fullscreen Image for Home Section */
+.full-screen-img {
+    width: 100%;
+    height: 100vh; /* Menutupi seluruh tinggi layar */
+    object-fit: cover; /* Memastikan gambar mengisi layar tanpa distorsi */
+    object-position: center; /* Menjaga gambar tetap terpusat */
+}
+
+/* Home Section */
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
 .intro {
     text-align: center;
     margin: 20px;
@@ -52,7 +87,11 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     z-index: 10;
+=======
+    z-index: 10; /* Pastikan teks di atas gambar */
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
     color: white;
 }
 
@@ -71,6 +110,7 @@ nav a:hover {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* --- ABOUT SECTION --- */
 .about-section {
     display: flex;
@@ -191,6 +231,51 @@ nav a:hover {
 }
 
 /* --- CONTACT SECTION --- */
+=======
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center; /* Menjaga konten tetap di tengah secara horizontal */
+    align-items: center; /* Menjaga konten tetap di tengah secara vertikal */
+    margin: 200px;
+    text-align: left; /* Membuat teks rata kiri */
+    flex-wrap: wrap; /* Menjaga agar elemen responsif pada layar kecil */
+}
+
+.about-img {
+    flex: 1; /* Memberikan ruang fleksibel untuk gambar */
+    margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+    max-width: 100%;
+}
+
+.about-img img {
+    width: 100%; /* Membuat gambar responsif */
+    max-width: 5000px; /* Menambah ukuran gambar menjadi lebih besar */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
+
+.about-text {
+    flex: 2; /* Memberikan lebih banyak ruang untuk teks */
+    max-width: 600px; /* Membatasi lebar maksimal teks */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada teks */
+    border-radius: 8px; /* Membuat sudut teks melengkung */
+}
+
+.about-text h2 {
+    color: #333; /* Warna teks untuk judul */
+    font-size: 2em; /* Ukuran font untuk judul */
+}
+
+.about-text p {
+    font-size: 1.2em; /* Ukuran font untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris yang nyaman dibaca */
+    color: #555; /* Warna teks untuk paragraf */
+}
+
+/* Contact Section */
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
 .contact-header {
     display: flex;
     justify-content: center;
@@ -199,9 +284,15 @@ nav a:hover {
 }
 
 .contact-img {
+<<<<<<< HEAD
     width: 20px;
     height: 20px;
     margin-right: 10px;
+=======
+    width: 30px; /* Mengubah ukuran gambar menjadi lebih kecil */
+    height: 30px;
+    margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
 }
 
 .contact-header p {
@@ -210,6 +301,10 @@ nav a:hover {
     padding: 5px 0;
 }
 
+<<<<<<< HEAD
+=======
+/* Contact Form */
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
 .contact-form {
     background-color: #fff;
     padding: 20px;
@@ -230,7 +325,11 @@ input[type="text"], input[type="email"], textarea {
 
 input[type="submit"] {
     background-color: #357537;
+<<<<<<< HEAD
     color: white;
+=======
+    color: rgb(255, 255, 255);
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -238,6 +337,7 @@ input[type="submit"] {
     width: 100%;
 }
 
+<<<<<<< HEAD
 /* --- RESPONSIVE MEDIA QUERY --- */
 @media (max-width: 768px) {
     .about-section {
@@ -257,3 +357,8 @@ input[type="submit"] {
         flex-direction: column;
     }
 }
+=======
+#input[type="submit"]:hover {
+    background-color:0;
+}
+>>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
