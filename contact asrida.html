@@ -1,66 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Asrida Alunat</title>
-    <link rel="stylesheet" type="text/css" href="asrida.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me - Asrida Alunat</title>
+        <link rel="stylesheet" type="text/css" href="asrida.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about asrida.html">About Me</a>
+            <a href="contact asrida.html">Contact Me</a>
+        </nav>
+            <main style="text-align: center; padding: 20px;">
+                <section class="contact-header">
+                    <img src="img/Gambar Asrida/email.png" alt="Ikon Email" class="contact-img">
+                   <strong><p class="email-text">Email: asridaalunat@gmail.com</p></strong>
+                </section>
+                <section class="contact-header">
+                    <img src="img/Gambar Asrida/contact.webp" alt="Ikon Handphone" class="contact-img">
+                    <strong><p>Handphone: 085333082637</p></strong>
+                </section>
+                <section class="contact-form">
+                    <form action="send-message.php" method="POST">
+                        <div>
+                            <label for="Handphone"><strong>Handphone</strong></label><br>
+                            <input type="text" id="Handphone" name="Handphone" placeholder="Nomor Handphone" required>
+                        </div>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html" style="color:black;">Home</a>
-        <a href="about asrida.html" style="color:black;">About Me</a>
-        <a href="contact asrida.html" style="color:black;">Contact Me</a>
-    </nav>
+                        <div>
+                            <label for="email"><strong>Email</strong></label><br>
+                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                        </div>
 
-    <!-- Contact Section -->
-    <header style="text-align: center;">
-        <div class="contact-header">
-<<<<<<< HEAD
-            <img src="img/Gambar Asrida/email.png" alt="Email" class="contact-img">
-=======
-            <img src="img/Gambar Asrida/email.png" alt="kontact" class="contact-img">
->>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
-            <h1><p style="color: rgb(31, 62, 235);">Email: asridaalunat@gmail.com</p></h1>
-        </div>
+                        <div>
+                            <label for="message"><strong>Pesan</strong></label><br>
+                            <textarea id="message" name="message" placeholder="Tulis pesan Anda..." rows="4" required></textarea>
+                        </div>
 
-        <div class="contact-header">
-<<<<<<< HEAD
-            <img src="img/Gambar Asrida/contact.webp" alt="kontact" class="contact-img">
-=======
-            <img src="img/Gambar Asrida/contact.webp" alt="Email" class="contact-img">
->>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
-            <h1><p>Handphone: 085333082637</p></h1>
-        </div>
+                        <div>
+                            <input type="submit" value="Kirim Pesan">
+                        </div>
+                    </form>
+                </section>
+            </main>
 
-        <!-- Contact Form -->
-        <div class="contact-form">
-            <form action="send-message.php" method="POST">
-                <div>
-                    <h3><label for="Handphone">Handphone</label></h3>
-                    <input type="text" name="Handphone" placeholder="Nomor Handphone" required />
-                </div>
-                <div>
-                    <h3><label for="email">Email</label></h3>
-                    <input type="email" name="email" placeholder="Email Anda" required />
-                </div>
-                <div>
-                    <h3><label for="message">Pesan</label></h3>
-                    <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="50" required></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Kirim Pesan" />
-                </div>
-            </form>
-        </div>
-    </header>
-
-</body>
+    </body>
 </html>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 5ee6d45134576757eb832e63822bc05a0787b4a7
